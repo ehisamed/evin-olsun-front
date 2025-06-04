@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "Home page",
+    "navbar": {
+      "newBuildings": "New Buildings",
+      "housesForRent": "Houses for Rent",
+      "housesForSale": "Houses for Sale",
+      "auth": {
+        "signIn": "Sign In",
+        "signUp": "Sign Up"
+      }
+    },
+    "changeLocationDialog": {
+      "changeCityTitle": "Do you want to change the city?",
+      "searchPlaceholder": "Search city...",
+      "cityNotFound": "City not found.",
+      "cancel": "Cancel",
+      "confirm": "Confirm selection",
+      "selectCity": "Select city..."
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "Главная страница",
+    "navbar": {
+      "newBuildings": "Новостройки",
+      "housesForRent": "Аренда",
+      "housesForSale": "Покупка",
+      "auth": {
+        "signIn": "Войти",
+        "signUp": "Регистрация"
+      }
+    },
+    "changeLocationDialog": {
+      "changeCityTitle": "Хотите изменить город?",
+      "searchPlaceholder": "Поиск города...",
+      "cityNotFound": "Город не найден.",
+      "cancel": "Отмена",
+      "confirm": "Подтвердить выбор",
+      "selectCity": "Выберите город..."
+    }
+  }
+}

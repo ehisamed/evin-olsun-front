@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "Ana sehife",
+    "navbar": {
+      "newBuildings": "Yeni tikililər",
+      "housesForRent": "Kirayə evlər",
+      "housesForSale": "Satlıq evlər",
+      "auth": {
+        "signIn": "Daxil ol",
+        "signUp": "Qeydiyyatdan keç"
+      }
+    },
+    "changeLocationDialog": {
+      "changeCityTitle": "Şəhəri dəyişmək istəyirsiniz?",
+      "searchPlaceholder": "Şəhər axtarın...",
+      "cityNotFound": "Şəhər tapılmadı.",
+      "cancel": "İmtina",
+      "confirm": "Seçimi Təsdiqlə",
+      "selectCity": "Şəhər seçin..."
+    }
+  }
+}
