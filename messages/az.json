@@ -17,6 +17,35 @@
       "cancel": "İmtina",
       "confirm": "Seçimi Təsdiqlə",
       "selectCity": "Şəhər seçin..."
+    },
+    "mobileMenu": {
+      "changeCity": "Şəhəri dəyiş",
+      "rent": {
+        "title": "Kirayə",
+        "apartments": "Mənzillər",
+        "houses": "Evlər",
+        "rooms": "Otaqlar",
+        "privateHouses": "Həyət evləri",
+        "villas": "Villalar",
+        "commercial": "Ticarət obyektləri",
+        "studios": "Studiyalar"
+      },
+      "sale": {
+        "title": "Satış",
+        "apartments": "Mənzillər",
+        "houses": "Evlər",
+        "lands": "Torpaq sahələri",
+        "privateHouses": "Həyət evləri",
+        "villas": "Villalar",
+        "commercial": "Ticarət obyektləri",
+        "studios": "Studiyalar"
+      },
+      "account": {
+        "title": "Hesab",
+        "signIn": "Daxil ol",
+        "signUp": "Qeydiyyat",
+        "logout": "Çıxış"
+      }
     }
   }
 }

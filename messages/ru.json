@@ -17,6 +17,35 @@
       "cancel": "Отмена",
       "confirm": "Подтвердить выбор",
       "selectCity": "Выберите город..."
+    },
+    "mobileMenu": {
+      "changeCity": "Изменить город",
+      "rent": {
+        "title": "Аренда",
+        "apartments": "Квартиры",
+        "houses": "Дома",
+        "rooms": "Комнаты",
+        "privateHouses": "Частные дома",
+        "villas": "Виллы",
+        "commercial": "Коммерческая недвижимость",
+        "studios": "Студии"
+      },
+      "sale": {
+        "title": "Покупка",
+        "apartments": "Квартиры",
+        "houses": "Дома",
+        "lands": "Земельные участки",
+        "privateHouses": "Частные дома",
+        "villas": "Виллы",
+        "commercial": "Коммерческая недвижимость",
+        "studios": "Студии"
+      },
+      "account": {
+        "title": "Аккаунт",
+        "signIn": "Войти",
+        "signUp": "Регистрация",
+        "logout": "Выйти"
+      }
     }
   }
 }

@@ -17,6 +17,35 @@
       "cancel": "Cancel",
       "confirm": "Confirm selection",
       "selectCity": "Select city..."
+    },
+    "mobileMenu": {
+      "changeCity": "Change city",
+      "rent": {
+        "title": "Rent",
+        "apartments": "Apartments",
+        "houses": "Houses",
+        "rooms": "Rooms",
+        "privateHouses": "Private Houses",
+        "villas": "Villas",
+        "commercial": "Commercial Properties",
+        "studios": "Studios"
+      },
+      "sale": {
+        "title": "Buy",
+        "apartments": "Apartments",
+        "houses": "Houses",
+        "lands": "Land Plots",
+        "privateHouses": "Private Houses",
+        "villas": "Villas",
+        "commercial": "Commercial Properties",
+        "studios": "Studios"
+      },
+      "account": {
+        "title": "Account",
+        "signIn": "Sign In",
+        "signUp": "Sign Up",
+        "logout": "Log Out"
+      }
     }
   }
 }

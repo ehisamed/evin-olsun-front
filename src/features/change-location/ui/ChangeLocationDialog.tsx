@@ -28,6 +28,7 @@ import {
   PopoverTrigger,
 } from "@/shared/components/ui/popover"
 import { useTranslations } from "next-intl"
+import useChangeLocation from "../model/useChangeLocation"
 
 const cities = [
   { value: "baku", label: "Bakı" },
@@ -43,7 +44,7 @@ type Props = {
 
 export function ChangeLocationDialog({ className }: Props) {
   const [open, setOpen] = React.useState(false)
-  const [selectedCity, setSelectedCity] = React.useState("lerik")
+  const { selectedCity, setSelectedCity } = useChangeLocation();
   const t = useTranslations('HomePage')
 
   const selectedLabel = cities.find(c => c.value === selectedCity)?.label
@@ -67,8 +68,9 @@ export function ChangeLocationDialog({ className }: Props) {
               <Button
                 variant="outline"
                 role="combobox"
+                size='lg'
                 aria-expanded={open}
-                className="w-full justify-between"
+                className="w-full h-12 justify-between"
               >
                 {selectedLabel ?? t("changeLocationDialog.selectCity")}
                 <Search className="ml-2 h-4 w-4 opacity-50" />
@@ -106,8 +108,8 @@ export function ChangeLocationDialog({ className }: Props) {
         </div>
 
         <AlertDialogFooter>
-          <AlertDialogCancel>{t("changeLocationDialog.cancel")}</AlertDialogCancel>
-          <AlertDialogAction>{t("changeLocationDialog.confirm")}</AlertDialogAction>
+          <AlertDialogCancel className="cursor-pointer text-sm md:text-md ">{t("changeLocationDialog.cancel")}</AlertDialogCancel>
+          <AlertDialogAction className="bg-blue-500 hover:bg-blue-600 text-sm transition-colors duration-150 cursor-pointer sm:text-md">{t("changeLocationDialog.confirm")}</AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
