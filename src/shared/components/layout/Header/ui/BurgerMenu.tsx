@@ -27,13 +27,13 @@ const BurgerMenu = ({ theme }: Props) => {
       <DrawerTrigger>
         <Menu />
       </DrawerTrigger>
-      <DrawerContent className="">
-        <ScrollArea className='max-h-screen '>
-          <p className='text-2xl font-semibold mb-1.5 px-5 my-5'>{t('mobileMenu.menu')}</p>
+      <DrawerContent className="flex flex-col h-full">
+        <ScrollArea className='flex-1 overflow-auto'>
+          <p className='text-2xl font-semibold mb-1.5 px-5 py-5 border-b'>{t('mobileMenu.menu')}</p>
           <Accordion type="multiple" className="w-full">
-            <AccordionItem value="rent">
+            <AccordionItem value="rent" className='border-0'>
               <AccordionTrigger className="text-xl font-500 py-3 px-5">{t('mobileMenu.rent.title')}</AccordionTrigger>
-              <AccordionContent className="">
+              <AccordionContent>
                 <MenuLink href="/" label={t('mobileMenu.rent.apartments')} />
                 <MenuLink href="/" label={t('mobileMenu.rent.houses')} />
                 <MenuLink href="/" label={t('mobileMenu.rent.rooms')} />
@@ -67,7 +67,7 @@ const BurgerMenu = ({ theme }: Props) => {
             <LocaleSwitcher className='h-5 py-2'/>
           </div>
           <div className='flex flex-col py-4 pt-0'>
-            <Link href='/' className='text-lg px-5 text-blue-700 focus:bg-gray-100 py-2'>{t('mobileMenu.account.signUp')}</Link>
+            <Link href='/' className='text-lg px-5 flex sm:hidden text-blue-700 focus:bg-gray-100 py-2'>{t('mobileMenu.account.signUp')}</Link>
 
             <Link href='/' className='text-lg gap-1.5 text-red-700 px-5 font-400 flex items-center focus:bg-gray-100 py-2'>
               <LogOut size={18} />
@@ -77,7 +77,7 @@ const BurgerMenu = ({ theme }: Props) => {
         </ScrollArea>
 
 
-        <div className="flex items-center gap-2 p-5 border-t mt-auto">
+        <div className="flex items-center gap-2 p-5 border-t mt-auto shrink-0">
           <ThemeToggle className='' />
           <p className='text-base font-medium'>
             {theme === 'light' ? t('mobileMenu.lightTheme') : t('mobileMenu.darkTheme')}

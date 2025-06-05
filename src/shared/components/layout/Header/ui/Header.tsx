@@ -38,16 +38,16 @@ const Header = ({theme}:Props) => {
         </Button>
       </div>
       <div className='flex gap-2 ml-auto items-center'>
-        <Button variant='ghost' size='sm' className='hover:bg-blue-50 text-lg cursor-pointer xsm:text-black text-blue-700 sm:text-sm transition-colors duration-150'>
+        <Button variant='ghost' size='sm' className='hover:bg-blue-50 text-lg cursor-pointer dark:xsm:text-white text-blue-700 sm:text-sm transition-colors duration-150'>
           <LogIn />
           {t('navbar.auth.signIn')}
         </Button>
-        <Button variant='default' size='sm' className='bg-blue-500 hover:bg-blue-600 transition-colors duration-150 items-center hidden xsm:flex  
+        <Button variant='default' size='sm' className='bg-blue-500 hover:bg-blue-600 transition-colors duration-150 items-center hidden sm:flex  
                          cursor-pointer dark:text-white'>
           <CircleUserRound />
           {t('navbar.auth.signUp')}
         </Button>
-        <ThemeToggle className='hidden sm:flex' />
+        <ThemeToggle className='hidden md:flex' />
       </div>
     </div>
   )
