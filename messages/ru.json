@@ -19,7 +19,11 @@
       "selectCity": "Выберите город..."
     },
     "mobileMenu": {
+      "menu":"Меню",
       "changeCity": "Изменить город",
+      "interfaceLanguage": "Язык интерфейса",
+      "lightTheme": "Светлая тема",
+      "darkTheme": "Темная тема",
       "rent": {
         "title": "Аренда",
         "apartments": "Квартиры",

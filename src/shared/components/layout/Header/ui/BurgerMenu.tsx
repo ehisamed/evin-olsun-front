@@ -1,6 +1,8 @@
 "use client"
 
+import LocaleSwitcher from '@/features/change-language/ui/LocalSwitcher'
 import { ChangeLocationDialog } from '@/features/change-location/ui/ChangeLocationDialog'
+import ThemeToggle from '@/features/theme-toggle/ui/ThemeToggle'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/shared/components/ui/accordion'
 import { Button } from '@/shared/components/ui/button'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/shared/components/ui/drawer'
@@ -11,22 +13,26 @@ import Link from 'next/link'
 import React from 'react'
 import { useMediaQuery } from 'usehooks-ts'
 
-const BurgerMenu = () => {
+type Props = {
+  theme?: string;
+}
+
+const BurgerMenu = ({ theme }: Props) => {
   const isDesctop = useMediaQuery("(min-width: 768px)")
   const t = useTranslations('HomePage');
 
-  return isDesctop ? <div>"Desctop"</div> :
+  return isDesctop ? null :
 
     <Drawer direction='left'>
       <DrawerTrigger>
         <Menu />
       </DrawerTrigger>
       <DrawerContent className="">
-        <ScrollArea className='max-h-screen p-5'>
-          <p className='text-lg font-semibold mb-1.5'>Menu</p>
+        <ScrollArea className='max-h-screen '>
+          <p className='text-2xl font-semibold mb-1.5 px-5 my-5'>{t('mobileMenu.menu')}</p>
           <Accordion type="multiple" className="w-full">
             <AccordionItem value="rent">
-              <AccordionTrigger className="text-sm font-500 py-3">{t('mobileMenu.rent.title')}</AccordionTrigger>
+              <AccordionTrigger className="text-xl font-500 py-3 px-5">{t('mobileMenu.rent.title')}</AccordionTrigger>
               <AccordionContent className="">
                 <MenuLink href="/" label={t('mobileMenu.rent.apartments')} />
                 <MenuLink href="/" label={t('mobileMenu.rent.houses')} />
@@ -39,7 +45,7 @@ const BurgerMenu = () => {
             </AccordionItem>
 
             <AccordionItem value="sale">
-              <AccordionTrigger className="text-sm font-500 py-4">{t('mobileMenu.sale.title')}</AccordionTrigger>
+              <AccordionTrigger className="text-xl font-500 py-4 px-5">{t('mobileMenu.sale.title')}</AccordionTrigger>
               <AccordionContent className="">
                 <MenuLink href="/" label={t('mobileMenu.sale.apartments')} />
                 <MenuLink href="/" label={t('mobileMenu.sale.houses')} />
@@ -52,20 +58,31 @@ const BurgerMenu = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <div className='flex items-center justify-between py-4 pt-0'>
-            <p className='text-sm font-400'>{t('mobileMenu.changeCity')}</p>
-            <ChangeLocationDialog className='h-6 text-xs gap-0.5 px-0.5'/>
+          {/* <div className='flex items-center justify-between py-4 pt-0'>
+            <p className='text-lg font-400'>{t('mobileMenu.changeCity')}</p>
+            <ChangeLocationDialog className='h-6 text-xs gap-0.5 px-0.5' />
+          </div> */}
+          <div className='flex justify-between items-center px-5 focus:bg-gray-100 py-2'>
+            <p className='text-lg'>{t('mobileMenu.interfaceLanguage')}</p>
+            <LocaleSwitcher className='h-5 py-2'/>
           </div>
-          <div className='flex flex-col gap-4 py-4 pt-0'>
-            <Link href='/' className='text-sm'>{t('mobileMenu.account.signIn')}</Link>
-            <Link href='/' className='text-sm'>{t('mobileMenu.account.signUp')}</Link>
-            <div className='flex items-center gap-2'>
+          <div className='flex flex-col py-4 pt-0'>
+            <Link href='/' className='text-lg px-5 text-blue-700 focus:bg-gray-100 py-2'>{t('mobileMenu.account.signUp')}</Link>
+
+            <Link href='/' className='text-lg gap-1.5 text-red-700 px-5 font-400 flex items-center focus:bg-gray-100 py-2'>
               <LogOut size={18} />
-              <Link href='/' className='text-sm font-400'>{t('mobileMenu.account.logout')}</Link>
-            </div>
+              {t('mobileMenu.account.logout')}
+            </Link>
           </div>
         </ScrollArea>
 
+
+        <div className="flex items-center gap-2 p-5 border-t mt-auto">
+          <ThemeToggle className='' />
+          <p className='text-base font-medium'>
+            {theme === 'light' ? t('mobileMenu.lightTheme') : t('mobileMenu.darkTheme')}
+          </p>
+        </div>
       </DrawerContent>
     </Drawer>
 
@@ -74,7 +91,7 @@ const BurgerMenu = () => {
 export default BurgerMenu
 
 const MenuLink = ({ href, label }: { href: string; label: string }) => (
-  <Link href={href} className="block py-2 text-sx hover:underline">
+  <Link href={href} className="block py-2 text-lg hover:underline px-5 text-neutral-900 dark:text-stone-200">
     {label}
   </Link>
 )

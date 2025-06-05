@@ -10,20 +10,25 @@ import {
 } from "@/shared/components/ui/select";
 import { useAvailableLocales } from "../model/useAvailableLocales";
 import { useChangeLocale } from "../model/useChangeLocale";
+import clsx from "clsx";
 
 type Props = {
   defaultValue: string;
   label: string;
+  className?: string;
 };
 
-export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
-  const onSelectChange = useChangeLocale(); 
+export default function LocaleSwitcherSelect({ defaultValue, label, className }: Props) {
+  const onSelectChange = useChangeLocale();
   const locales = useAvailableLocales();
 
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
       <SelectTrigger
-        className='w-fit h-8 border-none dark:bg-transparent cursor-pointer dark:hover:bg-transparent bg-transparent focus:ring-0 focus:ring-offset-0'
+        className={clsx(
+          'w-fit h-8 border-none dark:bg-transparent cursor-pointer dark:hover:bg-transparent bg-transparent focus:ring-0 focus:ring-offset-0',
+          className
+        )}
         aria-label={label}
       >
         <SelectValue />

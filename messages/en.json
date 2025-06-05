@@ -19,7 +19,11 @@
       "selectCity": "Select city..."
     },
     "mobileMenu": {
+      "menu":"Menu",
       "changeCity": "Change city",
+      "interfaceLanguage": "Interface language",
+      "lightTheme": "Light theme",
+      "darkTheme": "Dark theme",
       "rent": {
         "title": "Rent",
         "apartments": "Apartments",

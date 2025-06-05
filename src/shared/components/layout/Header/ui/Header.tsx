@@ -8,15 +8,18 @@ import ThemeToggle from '@/features/theme-toggle/ui/ThemeToggle';
 import { Button } from '../../../ui/button'
 import BurgerMenu from './BurgerMenu';
 
+type Props = {
+  theme?: string;
+}
 
-const Header = () => {
+const Header = ({theme}:Props) => {
   const t = useTranslations('HomePage')
   return (
     <div className='flex w-full mx-auto gap-2 items-center 2xl:max-w-[1536px] bg-white dark:bg-neutral-950 px-4 py-2 border-b border-gray-300 
         dark:border-neutral-800 sm:py-4 sm:px-5'>
-      <ChangeLocationDialog className="hidden md:flex" />
-      <BurgerMenu />
-      <LocaleSwitcher />
+      <BurgerMenu theme={theme}/>
+      <ChangeLocationDialog className="gap-0.5 ml-2" />
+      <LocaleSwitcher className='hidden md:flex'/>
       <div className='hidden md:flex items-center'>
         <Button variant='link' size='sm' className='transition-all duration-300'>
           <Link href='/home'>
@@ -35,7 +38,7 @@ const Header = () => {
         </Button>
       </div>
       <div className='flex gap-2 ml-auto items-center'>
-        <Button variant='ghost' size='sm' className='hover:bg-blue-50 cursor-pointer transition-colors duration-150'>
+        <Button variant='ghost' size='sm' className='hover:bg-blue-50 text-lg cursor-pointer xsm:text-black text-blue-700 sm:text-sm transition-colors duration-150'>
           <LogIn />
           {t('navbar.auth.signIn')}
         </Button>
@@ -44,7 +47,7 @@ const Header = () => {
           <CircleUserRound />
           {t('navbar.auth.signUp')}
         </Button>
-        <ThemeToggle />
+        <ThemeToggle className='hidden sm:flex' />
       </div>
     </div>
   )

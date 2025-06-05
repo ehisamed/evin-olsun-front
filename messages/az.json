@@ -19,7 +19,11 @@
       "selectCity": "Şəhər seçin..."
     },
     "mobileMenu": {
+      "menu": "Menyu",
       "changeCity": "Şəhəri dəyiş",
+      "interfaceLanguage": "İstifadəçi dili",
+      "lightTheme": "İşıqlı fon",
+      "darkTheme": "Qaranlıq fon",
       "rent": {
         "title": "Kirayə",
         "apartments": "Mənzillər",
@@ -43,7 +47,7 @@
       "account": {
         "title": "Hesab",
         "signIn": "Daxil ol",
-        "signUp": "Qeydiyyat",
+        "signUp": "Qeydiyyatdan keç",
         "logout": "Çıxış"
       }
     }
