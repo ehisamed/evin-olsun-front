@@ -1,3 +1,7 @@
+// src/features/change-location/model/useChangeLoaction.tsx
+
+'use client'
+
 import React, { useState } from 'react'
 
 const useChangeLocation = () => {

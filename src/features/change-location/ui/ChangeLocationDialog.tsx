@@ -1,3 +1,5 @@
+// src/features/change-location/ui/ChangeLocationDialog.tsx
+
 "use client"
 
 import * as React from "react"
@@ -59,7 +61,7 @@ export function ChangeLocationDialog({ className }: Props) {
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>{t('changeLocationDialog.changeCityTitle')}</AlertDialogTitle>
+          <AlertDialogTitle className="text-xl">{t('changeLocationDialog.changeCityTitle')}</AlertDialogTitle>
         </AlertDialogHeader>
 
         <div className="py-4">
@@ -108,8 +110,8 @@ export function ChangeLocationDialog({ className }: Props) {
         </div>
 
         <AlertDialogFooter>
-          <AlertDialogCancel className="cursor-pointer text-sm md:text-md ">{t("changeLocationDialog.cancel")}</AlertDialogCancel>
-          <AlertDialogAction className="bg-blue-500 hover:bg-blue-600 text-sm transition-colors duration-150 cursor-pointer sm:text-md">{t("changeLocationDialog.confirm")}</AlertDialogAction>
+          <AlertDialogCancel className="cursor-pointer py-6 md:py-4 text-base md:text-md ">{t("changeLocationDialog.cancel")}</AlertDialogCancel>
+          <AlertDialogAction className="bg-blue-500 py-6 md:py-4 hover:bg-blue-600 text-base transition-colors duration-150 cursor-pointer sm:text-md dark:text-white">{t("changeLocationDialog.confirm")}</AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>

@@ -19,7 +19,7 @@
       "selectCity": "Выберите город..."
     },
     "mobileMenu": {
-      "menu":"Меню",
+      "menu": "Меню",
       "changeCity": "Изменить город",
       "interfaceLanguage": "Язык интерфейса",
       "lightTheme": "Светлая тема",
@@ -51,5 +51,40 @@
         "logout": "Выйти"
       }
     }
+  },
+  "SignupPage": {
+    "createAccount": "Создать аккаунт",
+    "description": "Заполните поля ниже, чтобы создать новый аккаунт.",
+    "signInWithGoogle": "Войти через Google",
+    "or": "или",
+    "passwordLabel": "Пароль",
+    "termsLabel": "Я принимаю",
+    "terms": "Условия использования",
+    "minimumChars": "Минимум 6 символов.",
+    "signUp": "Зарегистрироваться",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "signIn": "Войти",
+    "SignUpForm": {
+      "emailRequired": "Email обязателен",
+      "emailInvalid": "Неверный формат email. Пример: example@gmail.com",
+      "emailGmailMinChars": "В Gmail-адресе должно быть минимум 6 символов до @gmail.com",
+      "passwordRequired": "Пароль обязателен",
+      "passwordMin": "Пароль должен содержать минимум 6 символов",
+      "passwordPattern": "Пароль должен содержать буквы и цифры",
+      "termsRequired": "Вы должны согласиться с условиями"
+    }
+  },
+  "LoginPage": {
+    "loginAccount": "Войти в аккаунт",
+    "description": "Введите данные, чтобы войти в систему.",
+    "signInWithGoogle": "Войти через Google",
+    "or": "или",
+    "emailLabel": "Email",
+    "passwordLabel": "Пароль",
+    "rememberMe": "Запомнить меня",
+    "forgotPassword": "Забыли пароль?",
+    "signIn": "Войти",
+    "dontHaveAccount": "Нет аккаунта?",
+    "signUp": "Зарегистрироваться"
   }
 }

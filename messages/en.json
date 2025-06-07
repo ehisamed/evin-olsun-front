@@ -19,7 +19,7 @@
       "selectCity": "Select city..."
     },
     "mobileMenu": {
-      "menu":"Menu",
+      "menu": "Menu",
       "changeCity": "Change city",
       "interfaceLanguage": "Interface language",
       "lightTheme": "Light theme",
@@ -51,5 +51,40 @@
         "logout": "Log Out"
       }
     }
+  },
+  "SignupPage": {
+    "createAccount": "Create an account",
+    "description": "Let’s get started. Fill in the details below to create your account.",
+    "signInWithGoogle": "Sign in with Google",
+    "or": "or",
+    "passwordLabel": "Password",
+    "termsLabel": "I agree to the",
+    "terms": "Terms & Conditions",
+    "minimumChars": "Minimum 6 characters.",
+    "signUp": "Sign up",
+    "alreadyHaveAccount": "Already have account?",
+    "signIn": "Sign in",
+    "SignUpForm": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email format. Example: example@gmail.com",
+      "emailGmailMinChars": "Gmail address must have at least 6 characters before @gmail.com",
+      "passwordRequired": "Password is required",
+      "passwordMin": "Password must be at least 6 characters",
+      "passwordPattern": "Password must contain letters and numbers",
+      "termsRequired": "You must agree to the terms"
+    }
+  },
+  "LoginPage": {
+    "loginAccount": "Sign in to your account",
+    "description": "Enter your credentials to access the system.",
+    "signInWithGoogle": "Sign in with Google",
+    "or": "or",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign in",
+    "dontHaveAccount": "Don't have an account?",
+    "signUp": "Sign up"
   }
 }

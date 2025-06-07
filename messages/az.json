@@ -51,5 +51,40 @@
         "logout": "Çıxış"
       }
     }
+  },
+  "SignupPage": {
+    "createAccount": "Hesab yarat",
+    "description": "Hesab yaratmaq üçün aşağıdakı məlumatları doldurun.",
+    "signInWithGoogle": "Google ilə daxil ol",
+    "or": "və ya",
+    "passwordLabel": "Şifrə",
+    "termsLabel": "Mən razıyam",
+    "terms": "İstifadə şərtləri ilə",
+    "minimumChars": "Ən azı 6 simvol.",
+    "signUp": "Qeydiyyatdan keç",
+    "alreadyHaveAccount": "Artıq hesabınız var?",
+    "signIn": "Daxil ol",
+    "SignUpForm": {
+      "emailRequired": "Email tələb olunur",
+      "emailInvalid": "Email formatı yanlışdır. Nümunə: example@gmail.com",
+      "emailGmailMinChars": "Gmail ünvanında @gmail.com-dan əvvəl ən azı 6 simvol olmalıdır",
+      "passwordRequired": "Şifrə tələb olunur",
+      "passwordMin": "Şifrə ən azı 6 simvoldan ibarət olmalıdır",
+      "passwordPattern": "Şifrə hərflər və rəqəmlərdən ibarət olmalıdır",
+      "termsRequired": "Şərtləri qəbul etməlisiniz"
+    }
+  },
+  "LoginPage": {
+    "loginAccount": "Hesaba daxil olun",
+    "description": "Sistemdə daxil olmaq üçün məlumatları daxil edin.",
+    "signInWithGoogle": "Google ilə daxil olun",
+    "or": "və ya",
+    "emailLabel": "Email",
+    "passwordLabel": "Şifrə",
+    "rememberMe": "Məni xatırla",
+    "forgotPassword": "Şifrəni unutmusunuz?",
+    "signIn": "Daxil ol",
+    "dontHaveAccount": "Hesabınız yoxdur?",
+    "signUp": "Qeydiyyatdan keçin"
   }
 }
