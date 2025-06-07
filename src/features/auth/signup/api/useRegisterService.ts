@@ -1,13 +1,13 @@
 // src/features/auth/signup/api/useRegisterService.ts
 
-import { SignupFormData } from "../model/useValidateSignupForm"
 import { useMutation} from '@tanstack/react-query'
-import axios from 'axios'
 import { UseFormReturn } from "react-hook-form"
+import axios from 'axios'
+import { SignUpFormData } from '../types'
 
-export const useRegisterService = (form: UseFormReturn<SignupFormData>) => {
+const useRegisterService = (form: UseFormReturn<SignUpFormData>) => {
   return useMutation({
-    mutationFn: async (data: SignupFormData) => {
+    mutationFn: async (data: SignUpFormData) => {
       const response = await axios.post('/api/auth/register', data)
       return response.data
     },
@@ -27,3 +27,5 @@ export const useRegisterService = (form: UseFormReturn<SignupFormData>) => {
     },
   })
 }
+
+export default useRegisterService

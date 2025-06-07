@@ -53,6 +53,7 @@
     }
   },
   "SignupPage": {
+    "title": "Qeydiyyat",
     "createAccount": "Hesab yarat",
     "description": "Hesab yaratmaq üçün aşağıdakı məlumatları doldurun.",
     "signInWithGoogle": "Google ilə daxil ol",

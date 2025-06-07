@@ -7,16 +7,15 @@ import { Input } from '@/shared/components/ui/input'
 import { Checkbox } from '@/shared/components/ui/checkbox'
 import { Label } from '@/shared/components/ui/label'
 import { Separator } from '@/shared/components/ui/separator'
-import { ArrowLeft, Eye, EyeClosed, Sun } from 'lucide-react'
-import { useTranslations } from 'next-intl'
-import { useRouter } from 'next/navigation'
 import ThemeToggle from '@/features/theme-toggle/ui/ThemeToggle'
-import { useValidateSignupForm } from '../model/useValidateSignupForm'
-import { useRegisterService } from '../api/useRegisterService'
-import { Controller } from 'react-hook-form'
-import Link from 'next/link'
-import { useState } from 'react'
 import { useSafeTranslations } from '@/shared/hooks/useSafeTranslations'
+import { ArrowLeft, Eye, EyeClosed } from 'lucide-react'
+import Link from 'next/link'
+import { Controller } from 'react-hook-form'
+import { useRouter } from 'next/navigation'
+import { useValidateSignupForm } from '../model'
+import { useRegisterService } from '../api'
+import { useState } from 'react'
 
 export default function SignUpForm() {
   const t = useSafeTranslations('SignupPage');
@@ -31,7 +30,7 @@ export default function SignUpForm() {
   })
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center px-4">
+    <div className="w-screen h-screen flex items-center justify-center px-4 overflow-x-hidden">
       <div className="max-w-md w-full my-auto py-10">
         <div className='flex justify-between'>
           <Button
@@ -90,7 +89,7 @@ export default function SignUpForm() {
                 className="absolute right-2 top-1/2 pd-0 -translate-y-1/2 h-8 w-8 text-sm"
                 variant="ghost"
               >
-                {showPassword ? <EyeClosed size={32}/> : <Eye width={32} height={32}/>}
+                {showPassword ? <EyeClosed size={32} /> : <Eye width={32} height={32} />}
               </Button>
             </div>
             {form.formState.errors.password && (

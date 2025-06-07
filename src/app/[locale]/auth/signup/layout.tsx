@@ -1,5 +1,20 @@
+// src/app/[locale]/auth/signup/layout.tsx
+
+import { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
 import React from 'react'
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const resolvedParams = await params
+  const locale = resolvedParams.locale
+
+  const translations = await import(`../../../../../messages/${locale}.json`)
+
+  return {
+    title: translations.SignupPage?.title || 'Sign Up',
+    description: translations.SignupPage?.description || 'Create your account',
+  }
+}
 
 const SignUpLayout = ({ children }: { children: React.ReactNode }) => {
 
@@ -27,6 +42,8 @@ const SignUpLayout = ({ children }: { children: React.ReactNode }) => {
   t2('passwordMin')
   t2('passwordPattern')
   t2('termsRequired')
+
+
 
   return (
     <>{children}</>

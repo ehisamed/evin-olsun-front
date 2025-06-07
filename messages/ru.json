@@ -53,6 +53,7 @@
     }
   },
   "SignupPage": {
+    "title": "Регистрация",
     "createAccount": "Создать аккаунт",
     "description": "Заполните поля ниже, чтобы создать новый аккаунт.",
     "signInWithGoogle": "Войти через Google",

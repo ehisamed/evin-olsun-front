@@ -53,6 +53,7 @@
     }
   },
   "SignupPage": {
+    "title": "Registration",
     "createAccount": "Create an account",
     "description": "Let’s get started. Fill in the details below to create your account.",
     "signInWithGoogle": "Sign in with Google",
