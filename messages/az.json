@@ -86,6 +86,11 @@
     "forgotPassword": "Şifrəni unutmusunuz?",
     "signIn": "Daxil ol",
     "dontHaveAccount": "Hesabınız yoxdur?",
-    "signUp": "Qeydiyyatdan keçin"
+    "signUp": "Qeydiyyatdan keçin",
+    "LoginForm": {
+      "emailRequired": "Email tələb olunur",
+      "passwordRequired": "Şifrə tələb olunur",
+      "emailInvalid": "Email formatı yanlışdır. Nümunə: example@gmail.com"
+    }
   }
 }

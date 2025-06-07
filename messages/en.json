@@ -86,6 +86,11 @@
     "forgotPassword": "Forgot password?",
     "signIn": "Sign in",
     "dontHaveAccount": "Don't have an account?",
-    "signUp": "Sign up"
+    "signUp": "Sign up",
+    "LoginForm": {
+      "emailRequired": "Email is required",
+      "passwordRequired": "Password is required",
+      "emailInvalid": "Invalid email format. Example: example@gmail.com"
+    }
   }
 }
