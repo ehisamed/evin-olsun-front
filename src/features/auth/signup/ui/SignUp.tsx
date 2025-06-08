@@ -16,6 +16,7 @@ import { useRouter } from 'next/navigation'
 import { useValidateSignupForm } from '../model'
 import { useRegisterService } from '../api'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function SignUpForm() {
   const t = useSafeTranslations('SignupPage');
@@ -48,8 +49,13 @@ export default function SignUpForm() {
           </p>
         </div>
 
-        <Button variant="outline" className="w-full h-12 mt-2 cursor-pointer " size='lg' >
-          <span className="mr-2">🌐</span> {t('signInWithGoogle')}
+        <Button variant="outline" className="w-full h-12 mt-2 cursor-pointer " size='lg'  onClick={() => window.location.href = 'http://localhost:3001/api/auth/google/login'}>
+          <Image
+            src="/static_icons/Google.svg"
+            height={24}
+            width={24}
+            alt='fdf'
+          /> {t('signInWithGoogle')}
         </Button>
 
         <div className="flex items-center gap-4 my-1">

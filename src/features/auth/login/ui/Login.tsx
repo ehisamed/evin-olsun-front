@@ -17,6 +17,7 @@ import { Controller } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
 import useValidateLoginForm from '../model/useValidateLoginForm'
 import useLoginService from '../api'
+import Image from 'next/image'
 
 export default function LoginForm() {
   const t = useTranslations('LoginPage');
@@ -49,8 +50,14 @@ export default function LoginForm() {
           </p>
         </div>
 
-        <Button variant="outline" className="w-full h-12 mt-5 cursor-pointer" size='lg'>
-          <span className="mr-2">🌐</span> {t('signInWithGoogle')}
+        <Button variant="outline" className="w-full h-12 mt-5 cursor-pointer" size='lg' onClick={() => window.location.href = 'http://localhost:3001/api/auth/google/login'}>
+          <Image
+            src="/static_icons/Google.svg"
+            height={24}
+            width={24}
+            alt='fdf'
+          />
+          {t('signInWithGoogle')}
         </Button>
 
         <div className="flex items-center gap-4 my-5">

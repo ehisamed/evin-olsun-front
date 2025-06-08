@@ -1,3 +1,5 @@
+// src/features/auth/signup/model/loginSchema.tsx
+
 import { z } from 'zod'
 
 export const schema = (t: (key: string) => string) => z.object({

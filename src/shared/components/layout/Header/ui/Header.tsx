@@ -24,7 +24,7 @@ const Header = ({ theme }: Props) => {
 
       <BurgerMenu theme={theme} />
 
-      <ChangeLocationDialog className="gap-0.5 ml-3" />
+      <ChangeLocationDialog className="gap-0 ml-3 rounded-2xl" />
 
       <LocaleSwitcher className='hidden md:flex' />
 

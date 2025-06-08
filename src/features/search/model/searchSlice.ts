@@ -1,0 +1,1 @@
+// src/features/search/model/searchSlice.ts
